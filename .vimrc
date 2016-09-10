@@ -15,3 +15,4 @@ set incsearch
 set ignorecase
 
 set lz
+syntax off
