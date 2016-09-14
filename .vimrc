@@ -5,10 +5,7 @@ set expandtab
 
 set wrap 
 
-set autoindent 
-set cin 
-set smartindent
-
+set autoindent
 set showmatch 
 set hlsearch
 set incsearch
