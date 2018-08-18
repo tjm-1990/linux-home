@@ -1,15 +1,21 @@
-set tabstop=2
-set shiftwidth=2
-set smarttab
+
+syntax on
+set tabstop=4
 set expandtab
-
-set wrap 
-
+set softtabstop=4
+set shiftwidth=4
 set autoindent
-set showmatch 
-set hlsearch
+set paste
+set number
+set showmatch
 set incsearch
+set hlsearch
 set ignorecase
+set listchars=tab:\|\ ,trail:.,extends:>,precedes:<,eol:$
+set fileencodings=utf-8,gb2312,gbk,gb18030
+set termencoding=utf-8
+set backspace=indent,eol,start
 
-set lz
-syntax off
+au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+
+
